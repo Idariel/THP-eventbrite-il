@@ -12,6 +12,10 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
+gem 'bootstrap', '~> 4.0.0'
+gem 'sprockets-rails', '~> 3.2.1'
+gem 'jquery-rails'
+gem 'popper_js'
 
 group :development, :test do
   gem 'sqlite3'
