@@ -1,0 +1,9 @@
+<%= render 'header' %>
+
+<br />
+<p class="form"><Sign up:></p>
+    <%= form_for @user do |f| %>
+    <p class="form">Votre nom : <%= f.text_field :name %></p>
+    <p class="form">Description de l'événement : <%= f.text_field :description %></p>
+    <p class="formButton"><%= f.submit "Créer l'événement" %></p>
+  <% end %>

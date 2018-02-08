@@ -6,7 +6,8 @@ class EventsController < ApplicationController
     @event = Event.new
   end
   def create
-    @event = Event.create(event_params)
+    # @event = Event.create(event_params)
+    @event = @user.events.create(event_params)
     @event.save
     redirect_to @event
   end
